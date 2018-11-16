@@ -6,7 +6,7 @@
  * Copyright 2013-2015 Alan Hong. and other contributors
  * summernote may be freely distributed under the MIT license./
  *
- * Date: 2016-01-14T13:17Z
+ * Date: 2018-11-16T14:24Z
  */
 (function (factory) {
   /* global define */
@@ -1811,7 +1811,7 @@
   var airEditable = renderer.create('<div class="note-editable" contentEditable="true"/>');
 
   var buttonGroup = renderer.create('<div class="note-btn-group btn-group">');
-  var button = renderer.create('<button type="button" class="note-btn btn btn-default btn-sm">', function ($node, options) {
+  var button = renderer.create('<button type="button" class="note-btn btn btn-primary btn-sm">', function ($node, options) {
     if (options && options.tooltip) {
       $node.attr({
         title: options.tooltip
@@ -5249,7 +5249,7 @@
                 '<div class="btn-group">',
                 '  <div class="note-palette-title">' + lang.color.background + '</div>',
                 '  <div>',
-                '    <button type="button" class="note-color-reset btn btn-default" data-event="backColor" data-value="inherit">',
+                '    <button type="button" class="note-color-reset btn btn-primary" data-event="backColor" data-value="inherit">',
                 lang.color.transparent,
                 '    </button>',
                 '  </div>',
@@ -5258,7 +5258,7 @@
                 '<div class="btn-group">',
                 '  <div class="note-palette-title">' + lang.color.foreground + '</div>',
                 '  <div>',
-                '    <button type="button" class="note-color-reset btn btn-default" data-event="removeFormat" data-value="foreColor">',
+                '    <button type="button" class="note-color-reset btn btn-primary" data-event="removeFormat" data-value="foreColor">',
                 lang.color.resetToDefault,
                 '    </button>',
                 '  </div>',
